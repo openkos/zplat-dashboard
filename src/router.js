@@ -28,7 +28,7 @@ let router = new Router({
 })
 
 const setTitle = (title) => {
-  let defaultTitle = "Moreu"
+  let defaultTitle = "Zplat"
   title = title ? `${defaultTitle} - ${title}` : defaultTitle;
   window.document.title = title;
 }

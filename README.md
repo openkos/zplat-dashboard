@@ -1,4 +1,4 @@
-# zpan-front
+# zplat-dashboard
 
 ## Project setup
 ```

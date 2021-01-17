@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import moreu from "moreu-jssdk";
+import moreu from "../libs/moreu";
 
 const Moreu = {
 }
