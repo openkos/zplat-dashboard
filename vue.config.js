@@ -9,7 +9,7 @@ module.exports = {
 
     // where to output built files
     // 打包后的输出目录
-    outputDir: 'dist',
+    outputDir: '/tmp/zplat-dashboard',
 
     // whether to use eslint-loader for lint on save.
     lintOnSave: false,
