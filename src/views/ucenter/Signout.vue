@@ -3,7 +3,7 @@
 <script>
 export default {
   mounted() {
-    this.$moreu.signout().then((ret) => {
+    this.$zplat.signout().then((ret) => {
       this.$message({
         type: "success",
         message: "登出成功，欢迎下次再来~",

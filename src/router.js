@@ -12,6 +12,7 @@ let router = new Router({
       children: [
         { path: 'profile', name: 'profile', meta: { title: "用户详情" }, component: () => import('./views/ucenter/Profile.vue') },
         { path: 'security', name: 'security', meta: { title: "账户安全" }, component: () => import('./views/ucenter/security.vue') },
+        { path: 'subsystem', name: 'subsystem', meta: { title: "账户安全" }, component: () => import('./views/subsystem') },
         { path: 'about', name: 'about', meta: { title: "关于" }, component: () => import('./views/ucenter/about.vue') },
       ]
     },

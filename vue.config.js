@@ -15,7 +15,7 @@ module.exports = {
     lintOnSave: false,
 
     transpileDependencies: [
-        'moreu-jssdk',
+        // 'zplat-jssdk',
     ],
 
     // tweak internal webpack configuration.
@@ -91,13 +91,13 @@ module.exports = {
     devServer: {
         open: process.platform === 'darwin',
         host: '0.0.0.0',
-        port: 8083,
+        port: 8215,
         https: false,
         hotOnly: false,
         disableHostCheck: true,
         proxy: {
             '/api': {
-                target: 'http://localhost:8081',
+                target: 'http://localhost:8216',
                 ws: true,
                 changeOrigin: true
             }

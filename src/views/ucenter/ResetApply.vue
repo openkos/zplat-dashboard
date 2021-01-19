@@ -50,7 +50,7 @@ export default {
           return;
         }
 
-        this.$moreu.applyPasswordReset(this.formItem.email).then((ret) => {
+        this.$zplat.applyPasswordReset(this.formItem.email).then((ret) => {
           this.$message({
             type: "success",
             message: "找回密码邮件发送成功!",

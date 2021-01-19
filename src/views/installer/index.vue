@@ -86,18 +86,18 @@ export default {
     return {
       step: 0,
       dsns: {
-        sqlite3: "moreu.db",
-        mysql: "user:pass@tcp(127.0.0.1:3306)/moreu?charset=utf8mb4&parseTime=True&loc=Local",
-        postgres: "host=localhost user=moreu password=moreu dbname=moreu port=9920 sslmode=disable TimeZone=Asia/Shanghai",
-        mssql: "sqlserver://moreu:LoremIpsum86@localhost:9930?database=moreu",
+        sqlite3: "zplat.db",
+        mysql: "user:pass@tcp(127.0.0.1:3306)/zplat?charset=utf8mb4&parseTime=True&loc=Local",
+        postgres: "host=localhost user=admin password=admin dbname=zplat port=9920 sslmode=disable TimeZone=Asia/Shanghai",
+        mssql: "sqlserver://zplat:LoremIpsum86@localhost:9930?database=zplat",
       },
       form: {
         database: {
           driver: "sqlite3",
-          dsn: "moreu.db",
+          dsn: "zplat.db",
         },
         administrator: {
-          email: "admin@moreu.io",
+          email: "admin@zplat.io",
         },
       },
       rules: {
@@ -132,8 +132,8 @@ export default {
         }
 
         console.log(this.form);
-        this.$moreu.configs.configsKeyPut(this.form.database, "database").then((ret) => {
-          this.$moreu.users.usersPost(this.form.administrator).then(() => {
+        this.$zplat.install("database", this.form.database).then((ret) => {
+          this.$zplat.signup(this.form.administrator).then(() => {
             this.$router.push({ name: "signin" });
           });
         });

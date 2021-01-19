@@ -3,7 +3,7 @@ import App from './App.vue'
 import router from './router'
 import './plugins/axios'
 import './plugins/element'
-import './plugins/moreu'
+import './plugins/zplat'
 
 Vue.config.productionTip = false
 

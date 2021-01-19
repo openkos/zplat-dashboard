@@ -24,7 +24,7 @@
             <i class="el-icon-setting"></i>
             <span slot="title">通知管理</span>
           </el-menu-item>
-          <el-menu-item index="developers" disabled>
+          <el-menu-item index="subsystem">
             <i class="el-icon-setting"></i>
             <span slot="title">应用管理</span>
           </el-menu-item>

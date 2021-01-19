@@ -55,7 +55,7 @@ export default {
           return;
         }
 
-        this.$moreu.signin(this.formItem).then((ret) => {
+        this.$zplat.signin(this.formItem).then((ret) => {
           location.replace(this.redirect);
         });
       });

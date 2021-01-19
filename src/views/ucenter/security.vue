@@ -60,7 +60,7 @@ export default {
           return;
         }
 
-        this.$moreu.updatePassword(this.form).then((ret) => {
+        this.$zplat.updatePassword(this.form).then((ret) => {
           this.$message({
             type: "success",
             message: "修改成功!",

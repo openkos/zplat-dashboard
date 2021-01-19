@@ -76,7 +76,7 @@ export default {
           return;
         }
 
-        this.$moreu.signup(this.formItem).then((ret) => {
+        this.$zplat.signup(this.formItem).then((ret) => {
           this.$message({
             type: "success",
             message: "注册成功!",

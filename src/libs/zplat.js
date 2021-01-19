@@ -14,7 +14,7 @@ axios.interceptors.response.use(function (response) {
     return Promise.reject(error);
 });
 
-let moreu = {
+let zplat = {
     signup(body) {
         return axios.post('/api/v1/users', body)
     },
@@ -48,6 +48,9 @@ let moreu = {
     find(username) {
         return axios.get(`/api/v1/users/${username}`)
     },
+    install(key, database) {
+        return axios.put(`/api/v1/configs/${key}`, database)
+    }
 }
 
-export default moreu;
+export default zplat;
